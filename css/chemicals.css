@@ -1,0 +1,252 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.chem-products
+{
+    width: 100%;
+    height: auto;
+    background-color:rgb(15, 109, 250);;
+    display: flex;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+.product-container
+{
+    width:80%;
+    height: auto;
+    background-color: rgb(93, 224, 247);
+    margin:20px;
+}
+.product-container .product-head
+{
+    width:100%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(25, 0, 255);
+    font-size: 25px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.product-container .product-desc
+{
+    width:80%;
+    height:auto;
+    justify-content: center;
+    padding: 15px auto;
+    margin: 15px auto;
+    text-align: left;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(77, 6, 143);
+    /* word-spacing: 2px; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.product-container .same-heading
+{
+    background-color:rgb(15, 109, 250);
+    position: sticky;
+    top:38px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(93, 224, 247);
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.product-container .same-heading:hover
+{
+    transform: scale(0.97,0.97);
+    transition:.6s linear;
+    box-shadow: 3px 5px 8px 1px black;
+    color:white;
+    cursor:grab;
+}
+
+.product-container .same-desc
+{
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    margin: 0 auto;
+    color:rgb(15, 50, 250);
+    font-size: 18px;
+}
+
+
+
+.product-container .same-chemicals
+{
+    width:98%;
+    height:auto;
+    margin:20px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color:none;
+    display: flex;
+    flex-wrap:wrap;
+}
+.product-container .same-chemicals .single-product
+{
+    width:200px;
+    height:200px;
+    box-shadow: 4px 8px 10px 3px rgba(0,0,0,0.8);
+    background-color:none;
+    margin:20px auto;
+    border-bottom:30px solid rgb(15, 109, 250);
+    border-bottom-left-radius: 6px;
+    border-top: 30px solid rgb(15, 109, 250);
+    border-top-right-radius: 6px;
+    border-left: 5px solid rgb(15, 109, 250);
+    border-right:5px solid rgb(15, 109, 250);
+}
+.product-container .same-chemicals .single-product:hover
+{
+    border: none;
+    transform: scale(1.09,1.05);
+    transition: .9s linear;
+    cursor: pointer;
+}
+.product-container .same-chemicals .single-product .chem-img
+{
+    width: 100%;
+    height: 100%;
+}
+.product-container .same-chemicals .single-product .chem-bttn
+{
+    width: 100%;
+    outline: none;
+    height: auto;
+    border: none;
+    background-color:rgb(15, 109, 250);
+    transition: linear .5s;
+}
+.product-container .same-chemicals .single-product .chem-bttn p
+{
+    font-size: 16px;
+    color: coral;
+}
+.product-container .same-chemicals .single-product .chem-bttn span
+{
+    font-size: 12px;
+    color: white;
+}
+
+.product-container .same-chemicals .single-product .chem-bttn:hover
+{
+    background-color: aqua;
+    color: black;
+}
+
+
+
+.more-btn-cont
+{
+    width:100%;
+    text-align: right;
+    align-items:center;
+    justify-content: left;
+}
+.more-btn-cont .more-btn
+{
+    text-align: center;
+    outline: none;
+    border:none;
+    height:30px;
+    width:100px;
+    border-radius: 5px;
+    background-color: rgb(15, 109, 250);
+    color: white;
+}
+.more-btn-cont .more-btn:hover
+{
+    background:none;
+    color: black;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    transition:1s linear;
+    border-top:2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+}
+.product-container .same-chemicals .more-same
+{
+    width:100%;
+    height:auto;
+    display: none;
+    flex-wrap:wrap;
+    margin:20px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.links-container
+{
+    width:20%;
+    background-color: antiquewhite;
+    margin: 20px 0;
+    position:sticky;
+	top:40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 250vh;
+    display: block;
+}
+.links-container ul
+{
+    list-style: none;
+}
+
+.links-container .links
+{
+    text-align: start;
+}
+.links-container .links ul
+{
+    list-style: none;
+}
+.links-container .links ul li
+{
+    padding:20px 2px;
+}
+
+
+/* =================================+RESPONSIVE PRODUCT PAGE+=================================== */
+@media screen and (max-width: 900px) {
+    .links-container
+    {
+        display: none;
+    }
+    .product-container
+    {
+        width: 100%;
+    }
+}
