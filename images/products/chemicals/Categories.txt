@@ -1,0 +1,20 @@
+1.Cooling Tower Chemicals
+2.Sewage Treatment Plant(STP) Chemicals
+3.Effluent Treatment Plant(ETP) Chemicals
+4.Reverse Osmosis(RO) Chemicals
+5.Water Treatment Chemicals
+6.Industrial Chemicals
+7.Distillery Chemicals
+8.Essential Oils
+9.Swimming Pool Chemicals
+10.Sugar Industry Chemicals
+11.Bio Culture Bacteria Solution
+12.Speciality Chemicals
+13.Hydrated Lime
+14.Textile Chemicals
+15.DETERGENT CHEMICALS
+16.Chemistry Lab Chemicals
+17.Laundry Chemicals
+18.Boiler Chemicals
+19.Floor Cleaning Chemicals
+20.Other Chemicals
