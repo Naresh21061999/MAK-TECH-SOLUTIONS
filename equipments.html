@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQUIPMENTS | Mak Tech Solutions</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon_equipments.png">
+    <!-- Local Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chemicals.css">
+    <!-- External Files -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navibar background">
+        <div class="logo">
+            <figure><a href="https://www.maktechsolutions.in"><img src="images/logos/LOGO_png.png" alt="LOGO"><a></a>
+            </figure>
+        </div>
+        <ul class="navi-list" id="navi-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="toDrop"><a href="#" class="current">Products <i class="fas fa-sort-down"></i></a>
+                <ul class="main-dropdown">
+                    <li class="chem-toDrop"><a href="chemicals.html"><i class="fas fa-vial"></i> Chemicals</a>
+                        <ul class="chem-dropdown">
+                            <li><a href="chemicals.html#etp">Effluent Treatment Plant(ETP) Chemicals</a></li>
+                            <li><a href="chemicals.html#stp">Sewage Treatment Plant(STP) Chemicals</a></li>
+                            <li><a href="chemicals.html#wtp">Water Treatment Plant(WTP) Chemicals</a></li>
+                            <li><a href="chemicals.html#ro">Reverse Osmosis(RO) Chemicals</a></li>
+                            <li><a href="chemicals.html#cooling">Cooling Tower Chemicals</a></li>
+                            <li><a href="chemicals.html#ro">Adhesives and sealants</a></li>
+                            <li><a href="chemicals.html#">Industrial Chemicals</a></li>
+                            <li><a href="chemicals.html#">Boiler Chemicals</a></li>
+                        </ul>
+                    </li>
+                    <li class="equi-toDrop"><a href="equipments.html"><i class="fas fa-tools"></i> Equipments</a>
+                        <ul class="equi-dropdown">
+                            <li><a href="#">Distillation column trainer</a></li>
+                            <li><a href="#">Liquid level control trainer</a></li>
+                            <li><a href="#">Reverse Osmosis Plant</a></li>
+                            <li><a href="#">Absorption column </a></li>
+                            <li><a href="#">Heat Exchanger</a></li>
+                            <li><a href="#">PLC Trainer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="right-nav">
+            <div class="search-box">
+                <input type="text" name="search" id="search-txt" placeholder="Type to search">
+                <a href="#" id="search-btn">
+                    <i class="fas fa-search" style="color:chocolate; font-size:14px"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- FOR RESPONSIVENESS-Designed hamburger and effect-circle -->
+        <div class="burger-bg" id="burger-bg"></div>
+        <div onclick="showMenu()" class="burger" id="hamburger">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+    </nav>
+
+
+
+    <section id="contact-form">
+
+    </section>
+
+
+
+
+    <section class="parteners">
+        <div class="deal-text">
+            <h1> We Deals with...</h1>
+        </div>
+        <div class="logo-slider">
+            <div class="item"><a href="https://www.danfoss.com/en-in/" target="_blank"><img src="images/parteners_logos/1Danfoss.png" alt="Danfoss"></a></div>
+            <div class="item"><a href="https://www.gemssensors.com/" target="_blank"><img src="images/parteners_logos/2gems.jpg" alt="Gems"></a></div>
+            <div class="item"><a href="https://www.se.com/in/en/" target="_blank"><img src="images/parteners_logos/3Schneider.png" alt="Schneider"></a></div>
+            <div class="item"><a href="http://www.gujaratmegafoodpark.com/" target="_blank"><img src="images/parteners_logos/4gujarat.png" alt="Gujarat Agro"></a></div>
+            <div class="item"><a href="https://www.yokogawa.com/in/" target="_blank"><img src="images/parteners_logos/5Yokogawa.png" alt="Yokogawa"></a></div>
+            <div class="item"><a href="https://membranes.com/" target="_blank"><img src="images/parteners_logos/6Nitto.jpg" alt="Nitto Group"></a></div>
+            <div class="item"><a href="https://www.rockwellautomation.com/" target="_blank"><img src="images/parteners_logos/7rockwell.jpg" alt="Rockwell"></a></div>
+            <div class="item"><a href="https://www.wika.co.in/" target="_blank"><img src="images/parteners_logos/8wika.gif" alt="Wika"></a></div>
+        </div>
+    </section>
+
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#" class="to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    <footer class="footer background">
+        <div class="footer-blocks">
+            <div class="footer-logo">
+                <img src="images/logos/mak-removebg.png" alt="Mak Tech Logo">
+            </div>
+            <div class="footer-links">
+                <p class="footer-head-text">Links</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="about.html" class="current">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-reachus">
+                <p class="footer-head-text">Reach US</p>
+                <div class="reachus-info">
+                    <i class="fas fa-user-tie fico" style="font-size:18px; color:coral"></i>
+                    <p> MUKESH KARELA (DIRECTOR) </p>
+                </div>
+                <div class="reachus-info">
+                    <i class="fas fa-mobile-alt fico"></i> <a href="tel:09549980906" "> 09549980906 </a> 
+                </div>
+                <div class=" reachus-info">
+                        <i class="fas fa-envelope-open-text fico"></i> <a
+                            href="mailto:info@maktechsolutions.in">info@maktechsolutions.in</a>
+                </div>
+                <div class="reachus-info">
+                    <i class="fas fa-map-marked-alt fico"></i>
+                    <p> 118, Sargaram Park Society, Aai Mata Road, Surat (GUJARAT)- 395010 </p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <p class="footer-head-text">Follow US</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mukesh.karela.1" id="facebook"> <i class="fab fa-facebook-f"> </i>
+                    </a>
+                    <a href="https://www.instagram.com/mukesh_karela/" id="instagram"> <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/mukesh_karela" id="twitter"> <i class="fab fa-twitter"></i> </a>
+                    <a href="https://www.linkedin.com/company/mak-tech-solutions/" id="linkedin"> <i
+                            class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-text">
+            © Copyright 2020 <span>MAK TECH SOLUTIONS</span> | All Rights Reserved
+        </div>
+    </footer>
+
+
+
+    <!-- FOR SLIDER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $('.logo-slider').slick(
+            {
+                slidesToShow: 5,
+                slidesToScroll: 2,
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 750,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 2,
+                            dots: true,
+                            arrows: false,
+                            autoplay: true,
+                            autoplaySpeed: 1500,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 2,
+                            dots: true,
+                            arrows: false,
+                            autoplay: true,
+                            autoplaySpeed: 1500,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            dots: false,
+                            arrows: true,
+                            autoplay: true,
+                            autoplaySpeed: 1800,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 360,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false,
+                            arrows: true,
+                            autoplay: true,
+                            autoplaySpeed: 1800,
+                            infinite: true,
+                            fade: true,
+                            cssEase: 'linear'
+                        }
+                    }
+                ]
+            });
+    </script>
+
+    <!-- FOR BURGER -->
+    <script>
+        let burger = document.getElementById("hamburger");
+        let navilist = document.getElementById("navi-list");
+        let burgerBackgrond = document.getElementById("burger-bg");
+        function showMenu() {
+            burger.classList.toggle("change");
+            navilist.classList.toggle("showhide");
+            burgerBackgrond.classList.toggle("change-burger-bg");
+        }
+    </script>
+
+    <!-- FOR TO-TOP BUTTON -->
+    <script>
+        const toTop = document.querySelector(".to-top");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 150) {
+                toTop.classList.add("top-active");
+            }
+            else {
+                toTop.classList.remove("top-active");
+            }
+        });
+    </script>
+</body>
+
+</html>

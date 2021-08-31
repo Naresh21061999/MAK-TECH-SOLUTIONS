@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAK TECH SOLUTIONS | Trust but verify</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <!-- Local Files -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/diwali-style.css">
+  <!-- External Files -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+  <!-- AOS css for div Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body onload="myFunction()">
+  <div id="loading"></div>
+
+  <div class="mak-head background">
+    <!-- <div class="header-address">
+
+    </div>
+
+    <div class="header-info">
+      
+    </div>
+
+    <div class="header-contact">
+        <a href="">
+          <div id="header-call">
+            <div class="h-contact-img">
+              <img src="images/icons/h_call.png" alt="Call Us">
+            </div>
+            <div class="h-contact-text">
+              Call Us : 06375009493
+            </div>
+          </div>
+        </a>
+
+        <div id="header-message">
+          <div class="h-contact-img">
+            <img src="images/icons/h_message.png" alt="Send a Message">
+          </div>
+          <div class="h-contact-text">
+            Text Us : 06375009493
+          </div>
+        </div>
+    </div> -->
+  </div>
+
+
+  <nav class="navibar background">
+    <div class="logo">
+      <figure><a href="https://www.maktechsolutions.in"><img src="images/logos/LOGO_png.png" alt="LOGO"><a></a>
+      </figure>
+    </div>
+    <ul class="navi-list" id="navi-list">
+      <li><a href="#" class="current">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li class="toDrop"><a href="#">Products <i class="fas fa-sort-down"></i></a>
+        <ul class="main-dropdown">
+          <li class="chem-toDrop"><a href="chemicals.html"><i class="fas fa-vial"></i> Chemicals</a>
+            <ul class="chem-dropdown">
+              <li><a href="chemicals.html#etp">Effluent Treatment Plant(ETP) Chemicals</a></li>
+              <li><a href="chemicals.html#stp">Sewage Treatment Plant(STP) Chemicals</a></li>
+              <li><a href="chemicals.html#wtp">Water Treatment Plant(WTP) Chemicals</a></li>
+              <li><a href="chemicals.html#ro">Reverse Osmosis(RO) Chemicals</a></li>
+              <li><a href="chemicals.html#cooling">Cooling Tower Chemicals</a></li>
+              <li><a href="chemicals.html#ro">Adhesives and sealants</a></li>
+              <li><a href="chemicals.html#">Industrial Chemicals</a></li>
+              <li><a href="chemicals.html#">Boiler Chemicals</a></li>
+            </ul>
+          </li>
+          <li class="equi-toDrop"><a href="equipments.html"><i class="fas fa-tools"></i> Equipments</a>
+            <ul class="equi-dropdown">
+              <li><a href="#">Distillation column trainer</a></li>
+              <li><a href="#">Liquid level control trainer</a></li>
+              <li><a href="#">Reverse Osmosis Plant</a></li>
+              <li><a href="#">Absorption column </a></li>
+              <li><a href="#">Heat Exchanger</a></li>
+              <li><a href="#">PLC Trainer</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="right-nav">
+      <div class="search-box">
+        <input type="text" name="search" id="search-txt" placeholder="Type to search">
+        <a href="#" id="search-btn">
+          <i class="fas fa-search" style="color:chocolate; font-size:14px"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- FOR RESPONSIVENESS-Designed hamburger and effect-circle -->
+    <div class="burger-bg" id="burger-bg"></div>
+    <div onclick="showMenu()" class="burger" id="hamburger">
+      <div class="bar" id="bar1"></div>
+      <div class="bar" id="bar2"></div>
+      <div class="bar" id="bar3"></div>
+    </div>
+  </nav>
+
+  <section class="main-section background">
+    <div class="box-main">
+      <div class="for-para">
+        <p class="text-big"><span>Water</span> – a life for living beings...</p>
+        <p class="text-small">Water is used for human consumption, industrial utilities, agricultural and landscape
+          irrigation.
+          Increasing demand for water and scarcity made man to think of water recycling for other sectors except human
+          consumption.
+          <br>
+          <span>
+            <span id="mak-name1">MAK TECH SOLUTIONS</span> designed innovative product lines for all water treatment
+            systems like RO membrane cleaner
+            (alkaline and acidic) , RO antiscalent, RO PH booster, polymeric coagulant and flocculant, effluent
+            decolorizer,
+            sludge dewatering etc.
+          </span>
+        </p>
+        <div class="buttons">
+          <button class="btn btn1">Our Products</button>
+          <button class="btn btn2">Contact us</button>
+        </div>
+      </div>
+      <div class="for-img">
+        <img src="https://source.unsplash.com/600x400/?water" alt="Water Management">
+      </div>
+    </div>
+  </section>
+
+  <section class="text-gray-700 body-font" id="gradient">
+    <div class="container px-5 py-24 mx-auto" id="product">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-2xl font-medium title-font mb-4 prod-tag">Mak-Tech Product Overview</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base prod-subtag">Mak Tech offers a wide range of products to
+          develop the right solution for the needs & concern of the customer.
+          Our Main focus is on to solve and prevent water treatment and process related problems. </p>
+      </div>
+      <div class="flex flex-wrap -m-4" data-aos="zoom-in">
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="images/chemical/RO.png">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg prod-text1">RO Membrane Antiscalants</h2>
+              <h3 class="text-blue-500 mb-3 prod-text2">{RO-Clean,Biocide RO,RO-DECL,Corroban 25 etc.}</h3>
+              <p class="mb-4 prod-text3">The RO Membrane cleaners offered by MAK TECH are prudently processed using
+                advanced methodologies
+                that ensure effective cleaning of impurities such as slimes, silica scales,
+                oils etc.</p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2" data-aos="fade-down">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="images/chemical/etp.jpg">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg  prod-text1">ETP and STP Chemicals</h2>
+              <h3 class="text-blue-500 mb-3 prod-text2">{Ferrous Sulphate,Polyelectrolyte,STP Deodorizer etc.}</h3>
+              <p class="mb-4 prod-text3">We are one of the leading manufacturers & suppliers of ETP & STP Chemicals -
+                Effluent Treatment & Sewage Treatment.</p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2" data-aos="fade-up">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="images/chemical/cooling_tow.jpg">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg  prod-text1">Cooling Tower Chemicals</h2>
+              <h3 class="text-blue-500 mb-3 prod-text2">{UNI ALKALISER,UNI DEFOAMER,UNI DIGESTER etc.}</h3>
+              <p class="mb-4 prod-text3">Mak Tech provides variety of cooling tower chemicals to control corrosion,
+                scaling and microbial fouling in cooling towers.</p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2" data-aos="zoom-in">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="images/chemical/boiler.jpg">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg  prod-text1">Boiler Chemicals</h2>
+              <h3 class="text-blue-500 mb-3 prod-text2">{Alkalinity Builders,Polyshield-200,300,546}</h3>
+              <p class="mb-4 prod-text3">MAK TECH offers boiler water treatment chemicals for all small, medium and high
+                pressure boilers.</p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="secRight" id="services">
+    <div class="content">
+      <p class="tag">Do You Know?</p>
+      <ul>
+        <li><i class="fab fa-alert"></i> &nbsp; About 70% of the population is without safe water</li>
+        <li><i class="fab fa-alert"></i> &nbsp; 90% of people in rural area are using unsafe water</li>
+        <li><i class="fab fa-alert"></i> &nbsp; Industries based on organic raw materials are the largest contributors
+          of organic pollution</li>
+        <li><i class="fab fa-alert"></i> &nbsp; About 25,000 people in world are killed everyday due to waterborne
+          diseases</li>
+        <li><i class="fab fa-alert"></i> &nbsp; The human brain is around 75% water and our body needs a constant supply
+          of clean healthy water just to
+          function properly.</li>
+        <li><i class="fab fa-alert"></i> &nbsp; Water treatment is an important aspect in making sure this process is
+          kept safe and efficient.</li>
+      </ul>
+    </div>
+    <div class="thumbnail">
+      <img src="images/chemical/doyouknow.png" alt="Do you Know?" class="thumb-image">
+    </div>
+  </section>
+
+  <section class="secLeft">
+    <div class="content">
+      <p class="tag">Water Treatment Solutions</p>
+      <p class="sub-tag">We are a quality-centric organization, so we always work hard to maintain a qualitative range
+        of products. The prime objective of our organization is to deliver products of superior quality. The product
+        range is processed and manufactured in complete accordance to the set industry quality standards. For processing
+        and manufacturing these products we use the best quality material.
+
+      </p>
+    </div>
+    <div class="thumbnail">
+      <img src="images/chemical/working.jpg" alt="Do you Know?" class="thumb-image">
+    </div>
+  </section>
+
+  <section class="secRight">
+    <div class="content">
+      <p class="tag">EXPERIENCE</p>
+      <p class="sub-tag"> Our expertise in industrial water and wastewater treatment chemicals,
+        and technical services means we are committed to providing outstanding products and
+        services that fulfill your wastewater treatment and processing requirements.
+        Our goal is to help ensure that your facility operates trouble-free at its optimum capability.</p>
+    </div>
+    <div class="thumbnail">
+      <img src="images/chemical/etp.jpg" alt="Do you Know?" class="thumb-image">
+    </div>
+  </section>
+
+
+
+  <section class="text-gray-700 body-font relative" id="contact">
+    <div class="container px-5 py-24 mx-auto flex sm:flex-no-wrap flex-wrap">
+      <div
+        class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
+          marginwidth="0" scrolling="no"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1585.5558772840418!2d72.85522693269982!3d21.196679799313177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fac0b189e37%3A0x5277855ca41f9338!2sSargam%20Park%20Society%2C%20Umarwada%2C%20Surat%2C%20Gujarat%20395101!5e0!3m2!1sen!2sin!4v1599280761638!5m2!1sen!2sin"
+          style="filter: grayscale(0.7) contrast(1.2) opacity(0.7);"></iframe>
+        <div class="bg-white relative flex flex-wrap py-6" id="contact-info">
+          <div class="lg:w-1/2 px-6">
+            <img src="images/icons/location_icon.ico" alt="ADDRESS : ">
+            <p class="">118, Sargaram Park Society, Aai Mata Road, Surat (GUJARAT)- 395010</p>
+          </div>
+          <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">EMAIL</h2>
+            <a class="text-orange-500 leading-relaxed"
+              href="mailto:info.maktechsolutions@gmail.com?cc=info@maktechsolutions.in&subject=Mail from MAKTECH Website&body=Write your mail to MAK TECH SOLUTIONS">info@maktechsolutions.in</a>
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mt-4">PHONE</h2>
+            <p class="leading-relaxed">09549980906/07000858060</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Contact Us</h2>
+        <p class="leading-relaxed mb-5 text-gray-600">Feel free to get in touch with us | We would love to hear from
+          you.</p>
+        <input
+          class="bg-white rounded border border-gray-400 focus:outline-none focus:border-orange-500 text-base px-4 py-2 mb-4"
+          placeholder="Name" type="text">
+        <input
+          class="bg-white rounded border border-gray-400 focus:outline-none focus:border-orange-500 text-base px-4 py-2 mb-4"
+          placeholder="Email" type="email">
+        <textarea
+          class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-orange-500 text-base px-4 py-2 mb-4 resize-none"
+          placeholder="Message"></textarea>
+        <button
+          class="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">Send</button>
+        <p class="text-xs text-gray-500 mt-3">We will try our best to get back to you as soon as possible. Thank you...
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="parteners">
+    <div class="deal-text">
+      <h1> WE DEALS WITH...</h1>
+    </div>
+    <div class="logo-slider" data-aos="zoom-in-up">
+      <div class="item"><a href="https://www.danfoss.com/en-in/" target="_blank"><img
+            src="images/parteners_logos/1Danfoss.png" alt="Danfoss"></a></div>
+      <div class="item"><a href="https://www.gemssensors.com/" target="_blank"><img
+            src="images/parteners_logos/2gems.jpg" alt="Gems"></a></div>
+      <div class="item"><a href="https://www.se.com/in/en/" target="_blank"><img
+            src="images/parteners_logos/3Schneider.png" alt="Schneider"></a></div>
+      <div class="item"><a href="http://www.gujaratmegafoodpark.com/" target="_blank"><img
+            src="images/parteners_logos/4gujarat.png" alt="Gujarat Agro"></a></div>
+      <div class="item"><a href="https://www.yokogawa.com/in/" target="_blank"><img
+            src="images/parteners_logos/5Yokogawa.png" alt="Yokogawa"></a></div>
+      <div class="item"><a href="https://membranes.com/" target="_blank"><img src="images/parteners_logos/6Nitto.jpg"
+            alt="Nitto Group"></a></div>
+      <div class="item"><a href="https://www.rockwellautomation.com/" target="_blank"><img
+            src="images/parteners_logos/7rockwell.jpg" alt="Rockwell"></a></div>
+      <div class="item"><a href="https://www.wika.co.in/" target="_blank"><img src="images/parteners_logos/8wika.gif"
+            alt="Wika"></a></div>
+    </div>
+  </section>
+
+
+  <!-- BACK TO TOP BUTTON -->
+  <a href="#" class="to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+  <footer class="footer background">
+
+    <div class="footer-blocks">
+      <div class="footer-logo">
+        <img src="images/logos/mak-removebg.png" alt="Mak Tech Logo">
+      </div>
+
+      <div class="footer-links">
+        <p class="footer-head-text">Links</p>
+        <ul>
+          <li><a href="#" class="current">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-reachus">
+        <p class="footer-head-text">Reach US</p>
+        <div class="reachus-info">
+          <i class="fas fa-user-tie fico" style="font-size:18px; color:coral"></i>
+          <a href="http://mukesh.maktechsolutions.in">MUKESH KARELA (DIRECTOR)</a>
+        </div>
+        <div class="reachus-info">
+          <i class="fas fa-mobile-alt fico"></i> <a href="tel:09549980906" "> 09549980906 </a> 
+        </div>
+        <div class=" reachus-info">
+            <i class="fas fa-envelope-open-text fico"></i> <a
+              href="mailto:info@maktechsolutions.in">info@maktechsolutions.in</a>
+        </div>
+        <div class="reachus-info">
+          <i class="fas fa-map-marked-alt fico"></i>
+          <p> 118, Sargaram Park Society, Aai Mata Road, Surat (GUJARAT)- 395010 </p>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <p class="footer-head-text">Follow US</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/mukesh.karela.1" id="facebook"> <i class="fab fa-facebook-f"> </i> </a>
+          <a href="https://www.instagram.com/mukesh_karela/" id="instagram"> <i class="fab fa-instagram"></i> </a>
+          <a href="https://twitter.com/mukesh_karela" id="twitter"> <i class="fab fa-twitter"></i> </a>
+          <a href="https://www.linkedin.com/company/mak-tech-solutions/" id="linkedin"> <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-text">
+      © Copyright 2020 <span>MAK TECH SOLUTIONS</span> | All Rights Reserved
+    </div>
+
+  </footer>
+  <!-- FOR SLIDER -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    $('.logo-slider').slick(
+      {
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        infinite: true,
+        responsive: [
+          {
+            breakpoint: 750,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2,
+              dots: true,
+              arrows: false,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              infinite: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              dots: true,
+              arrows: false,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 520,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              dots: false,
+              arrows: true,
+              autoplay: true,
+              autoplaySpeed: 1800,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 360,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: false,
+              arrows: true,
+              autoplay: true,
+              autoplaySpeed: 1800,
+              infinite: true,
+              fade: true,
+              cssEase: 'linear'
+            }
+          }
+        ]
+      });
+  </script>
+
+  <!-- FOR PRELOADER-->
+  <script>
+    var preloader = document.getElementById("loading");
+    window.addEventListener('load', function () {
+      preloader.style.display = 'none';
+    })
+
+    function myFunction() {
+      preloader.style.display = 'none';
+    };
+  </script>
+
+  <!-- FOR BURGER -->
+  <script>
+    let burger = document.getElementById("hamburger");
+    let navilist = document.getElementById("navi-list");
+    let burgerBackgrond = document.getElementById("burger-bg");
+    function showMenu() {
+      burger.classList.toggle("change");
+      navilist.classList.toggle("showhide");
+      burgerBackgrond.classList.toggle("change-burger-bg");
+    }
+  </script>
+
+  <!-- FOR TO-TOP BUTTON -->
+  <script>
+    const toTop = document.querySelector(".to-top");
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 150) {
+        toTop.classList.add("top-active");
+      }
+      else {
+        toTop.classList.remove("top-active");
+      }
+    });
+  </script>
+
+  <!-- AOS JS Plugin for div animation on scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 260,
+      delay: 0,
+      duration: 1000,
+      once: false,
+      mirror: false,
+      anchorPlacement: 'top-bottom'
+    });
+  </script>
+</body>
+
+</html>
